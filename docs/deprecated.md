@@ -73,7 +73,7 @@ variants:
 ### Driver Specific Log Tags
 **Deprecated In Release: v1.9**
 
-**Target For Removal In Release: v1.11**
+**Removed In Release: v1.12**
 
 Log tags are now generated in a standard way across different logging drivers.
 Because of which, the driver specific log tag options `syslog-tag`, `gelf-tag` and
@@ -92,7 +92,7 @@ The lxc-conf flag and API fields will also be removed.
 ### Old Command Line Options
 **Deprecated In Release: [v1.8.0](https://github.com/docker/docker/releases/tag/v1.8.0)**
 
-**Target For Removal In Release: v1.10**
+**Removed In Release: [v1.10.0](https://github.com/docker/docker/releases/tag/v1.10.0)**
 
 The flags `-d` and `--daemon` are deprecated in favor of the `daemon` subcommand:
 
@@ -145,9 +145,9 @@ Version 1.9 adds a flag (`--disable-legacy-registry=false`) which prevents the d
 ### Docker Content Trust ENV passphrase variables name change
 **Deprecated In Release: v1.9**
 
-**Target For Removal In Release: v1.10**
+**Removed In Release: v1.12**
 
-As of 1.9, Docker Content Trust Offline key will be renamed to Root key and the Tagging key will be renamed to Repository key. Due to this renaming, we're also changing the corresponding environment variables
+Since 1.9, Docker Content Trust Offline key has been renamed to Root key and the Tagging key has been renamed to Repository key. Due to this renaming, we're also changing the corresponding environment variables
 
-- DOCKER_CONTENT_TRUST_OFFLINE_PASSPHRASE will now be named DOCKER_CONTENT_TRUST_ROOT_PASSPHRASE
-- DOCKER_CONTENT_TRUST_TAGGING_PASSPHRASE will now be named DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE
+- DOCKER_CONTENT_TRUST_OFFLINE_PASSPHRASE is now named DOCKER_CONTENT_TRUST_ROOT_PASSPHRASE
+- DOCKER_CONTENT_TRUST_TAGGING_PASSPHRASE is now named DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE
